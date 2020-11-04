@@ -369,6 +369,53 @@ To fix the incorrect port, start the Docker service with the `--userland-proxy=f
 
 ### When I run a server on a port besides 34197 nobody can connect from the server browser
 
+## map-gen-settings 
+
+| FACTORIO_DOCKER_RELEASE | ENV_VAR  | DEFAULT |  
+| ------------- | ------------- | ------------- |
+|1.0|WATER|1|
+|1.0|WIDTH|1|
+|1.0|HEIGHT|1|
+|1.0|STARTING_AREA|1|
+|1.0|TERRAIN_SEGMENTATION|1|
+|1.0|PEACEFUL_MODE|FALSE|
+|1.0|COAL_FREQUENCY|1|
+|1.0|COAL_SIZE|1|
+|1.0|COAL_RICHNESS|1|
+|1.0|STONE_FREQUENCY|1|
+|1.0|STONE_SIZE|1|
+|1.0|STONE_RICHNESS|1|
+|1.0|COPPER_FREQUENCY|1|
+|1.0|COPPER_SIZE|1|
+|1.0|COPPER_RICHNESS|1|
+|1.0|IRON_FREQUENCY|1|
+|1.0|IRON_SIZE|1|
+|1.0|IRON_RICHNESS|1|
+|1.0|URANIUM_FREQUENCY|1|
+|1.0|URANIUM_SIZE|1|
+|1.0|URANIUM_RICHNESS|1|
+|1.0|CRUDE_FREQUENCY|1|
+|1.0|CRUDE_SIZE|1|
+|1.0|CRUDE_RICHNESS|1|
+|1.0|TREES_FREQUENCY|1|
+|1.0|TREES_SIZE|1|
+|1.0|TREES_RICHNESS|1|
+|1.0|ENEMY_FREQUENCY|1|
+|1.0|ENEMY_SIZE|1|
+|1.0|ENEMY_RICHNESS|1|
+|1.0|CLIFF_NAME|cliff|
+|1.0|CLIFF_ELEVATION|10|
+|1.0|CLIFF_ELEVATION_INTERVAL|40|
+|1.0|CLIFF_RICHNESS|1|
+|1.0|CONTROL_SETTING_MOISTURE_FREQUENCY_MULTIPLIER|1|
+|1.0|CONTROL_SETTING_MOISTURE_BIAS|0|
+|1.0|CONTROL_SETTING_AUX_FREQUENCY_MULTIPLIER|1|
+|1.0|CONTROL_SETTING_AUX_BIAS|0|
+|1.0|STARTING_POINT_X|0|
+|1.0|STARTING_POINT_Y|0|
+|1.0|SEED|null|
+
+
 Use the `PORT` environment variable to start the server on the a different port, .e.g. `docker run -e "PORT=34198"`. This changes the source port on the packets used for port detection. `-p 34198:34197` works fine for private servers, but the server browser detects the wrong port.
 
 ## Contributors
