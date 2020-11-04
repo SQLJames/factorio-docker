@@ -24,7 +24,11 @@ if [[ ! -f $CONFIG/server-settings.json ]]; then
 fi
 
 if [[ ! -f $CONFIG/map-gen-settings.json ]]; then
-  cp /opt/factorio/data/map-gen-settings.example.json "$CONFIG/map-gen-settings.json"
+  # dynamically create settings file
+  echo "Creating map-gen-settings file"
+  source ./generate-map-gen-settings.sh
+  echo "moving the settings file to the proper location"
+  mv ./map-gen-settings.json "$CONFIG/map-gen-settings.json"
 fi
 
 if [[ ! -f $CONFIG/map-settings.json ]]; then
